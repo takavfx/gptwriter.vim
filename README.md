@@ -1,0 +1,1 @@
+# gptwriter.vim
