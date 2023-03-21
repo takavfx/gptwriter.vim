@@ -1,0 +1,39 @@
+*gptwriter.txt*	DailyNote creation management tool.
+
+Author:  Takanori Kishikawa <aruatus.lemma@gmail.com>
+License: MIT license
+
+=============================================================================
+CONTENTS					                              *gptwriter-contents*
+
+INTRODUCTION		                          			|gptwriter-introduction|
+INTERFACE				                                |gptwriter-interface|
+  VARIABLE				                              |gptwriter-variable|
+  AUTOCMD				                                |gptwriter-autocmd|
+
+
+=============================================================================
+INTRODUCTION					*gptwriter-introduction*
+
+*gptwriter.vim* (gptwriter) isa a tool writing with GPT API (Open API).
+Currently only support 'GPT-3.5-turbo' model.
+
+=============================================================================
+INTERFACE						  *gptwriter-interface*
+
+-----------------------------------------------------------------------------
+VARIABLE						  *gptwriter-variable*
+
+*g:gptwriter_key*
+  *Required!* Open AI AIP key to drive this plugin.
+
+
+-----------------------------------------------------------------------------
+AUTOCMD	                                           gptwriter-autocmd
+
+GPTWrite                                           GPTWrite
+      Ask content with giving question to GPT.
+
+GPTWriteTheRest                                    GPTWriteTheRest
+      Ask GPT to write the rest from entire buffer and write down from the
+      pointer.
