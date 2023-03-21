@@ -17,10 +17,7 @@ export async function get_content(denops: Denops, text: string): Promise<string>
       {"role": "user", "content": text}
     ],
   });
-  console.log(result);
   const content = result.choices[0].message.content as string;
-
-  console.log(content);
   return content;
 }
 
