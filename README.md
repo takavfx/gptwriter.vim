@@ -17,7 +17,7 @@ If you mange plugins with [dein.vim](https://github.com/Shougo/dein.vim) and man
 [[plugins]]
 repo = 'takavfx/gptwriter.vim'
 hook_add = '''
-let g:gptwriter#key = '<openapi_key>'
+let g:gptwriter#key = '<openapi_key>' # Or you have to manage seprately for safety.
 '''
 ```
 
@@ -37,4 +37,8 @@ For example:
 ```
 :GPTWRite think about shooting game
 ```
+
+### Ask GPT and let he/she write THE REST
+
+Let GPT write the rest from activat entire buffer.
 
