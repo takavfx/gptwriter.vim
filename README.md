@@ -16,6 +16,7 @@ If you mange plugins with [dein.vim](https://github.com/Shougo/dein.vim) and man
 ```toml:.dein.toml
 [[plugins]]
 repo = 'takavfx/gptwriter.vim'
+depends = 'denops.vim'
 hook_add = '''
 let g:gptwriterkey = '<openapi_key>' # Or you have to manage seprately for safety.
 '''
@@ -41,4 +42,8 @@ For example:
 ### Ask GPT and let he/she write THE REST
 
 Let GPT write the rest from activat entire buffer.
+
+```
+:GPTWriteTheRest
+```
 
