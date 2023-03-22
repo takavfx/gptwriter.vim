@@ -17,7 +17,7 @@ If you mange plugins with [dein.vim](https://github.com/Shougo/dein.vim) and man
 [[plugins]]
 repo = 'takavfx/gptwriter.vim'
 hook_add = '''
-let g:gptwriter#key = '<openapi_key>' # Or you have to manage seprately for safety.
+let g:gptwriterkey = '<openapi_key>' # Or you have to manage seprately for safety.
 '''
 ```
 
