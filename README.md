@@ -29,13 +29,13 @@ GPTWriter writes response from GPT (ChatGPT) at the cursor in an active buffer.
 Execute `GPTWrite` command with arg like this:
 
 ```
-:GPTWRite <sentence to write>
+:GPTWrite <sentence to write>
 ```
 
 For example:
 
 ```
-:GPTWRite think about shooting game
+:GPTWrite think about shooting game
 ```
 
 ### Ask GPT and let he/she write THE REST
