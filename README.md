@@ -18,7 +18,7 @@ If you mange plugins with [dein.vim](https://github.com/Shougo/dein.vim) and man
 repo = 'takavfx/gptwriter.vim'
 depends = 'denops.vim'
 hook_add = '''
-let g:gptwriterkey = '<openapi_key>' # Or you have to manage seprately for safety.
+let g:gptwriter_key = '<openapi_key>' # Or you have to manage seprately for safety.
 '''
 ```
 
