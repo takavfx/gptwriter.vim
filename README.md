@@ -16,8 +16,9 @@ If you mange plugins with [dein.vim](https://github.com/Shougo/dein.vim) and man
 ```toml:.dein.toml
 [[plugins]]
 repo = 'takavfx/gptwriter.vim'
+depends = 'denops.vim'
 hook_add = '''
-let g:gptwriter#key = '<openapi_key>' # Or you have to manage seprately for safety.
+let g:gptwriter_key = '<openapi_key>' # Or you have to manage seprately for safety.
 '''
 ```
 
@@ -29,13 +30,13 @@ GPTWriter writes response from GPT (ChatGPT) at the cursor in an active buffer.
 Execute `GPTWrite` command with arg like this:
 
 ```
-:GPTWRite <sentence to write>
+:GPTWrite <sentence to write>
 ```
 
 For example:
 
 ```
-:GPTWRite think about shooting game
+:GPTWrite think about shooting game
 ```
 
 ### Ask GPT and let he/she write THE REST
