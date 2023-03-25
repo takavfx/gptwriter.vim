@@ -37,3 +37,7 @@ GPTWrite                                           GPTWrite
 GPTWriteTheRest                                    GPTWriteTheRest
       Ask GPT to write the rest from entire buffer and write down from the
       pointer.
+
+GPTWriteTheRestFromLines
+      Ask GPT to write the rest from selected lines and write down from the
+      next line of the pointer.

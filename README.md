@@ -42,3 +42,12 @@ For example:
 
 Let GPT write the rest from activat entire buffer.
 
+```
+:GPTWriteTheRest
+```
+
+### Ask GPT and let he/she write THESÎy REST FROM selected LINES
+
+```
+:GPTWriteTheRestFromLines
+```

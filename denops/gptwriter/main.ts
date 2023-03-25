@@ -37,10 +37,26 @@ export async function main(denops: Denops): Promise<void> {
         console.error(error);
       }
       return Promise.resolve();
+    },
+
+    async write_the_reset_from_lines(): Promise<unknown> {
+
+      const lines = await fn.getline(denops, "'<", "'>");
+      const line_num = await fn.line(denops, "'>");
+      const next_line_num = +line_num + 2;
+      const content_text = lines.join(' ');
+      try {
+        const content = await get_content(denops, content_text)
+        await fn.setline(denops, next_line_num, content.split(/\r?\n/g));
+      } catch (error) {
+        console.error(error);
+      }
+      return Promise.resolve();
     }
   }
 
   await denops.cmd(`command! -nargs=? GPTWrite call denops#request('${denops.name}', 'write', [<q-args>])`);
   await denops.cmd(`command! GPTWriteTheRest call denops#request('${denops.name}', 'write_the_rest', [])`);
+  await denops.cmd(`command! GPTWriteTheRestFromLines call denops#request('${denops.name}', 'write_the_reset_from_lines', [])`);
 }
 
