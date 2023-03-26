@@ -22,7 +22,7 @@ export async function main(denops: Denops): Promise<void> {
       try {
         const content = await get_content(denops, text);
         console.debug(content);
-        await fn.setline(denops, line_num, content.split(/\r?\n/g));
+        await fn.append(denops, line_num, content.split(/\r?\n/g));
       } catch (error) {
         console.error(error);
       }
@@ -47,7 +47,7 @@ export async function main(denops: Denops): Promise<void> {
       try {
         const content = await get_content(denops, operation_text);
         console.debug(content);
-        await fn.setline(denops, next_line_num, content.split(/\r?\n/g));
+        await fn.append(denops, next_line_num, content.split(/\r?\n/g));
       } catch (error) {
         console.error(error);
       }
@@ -72,7 +72,7 @@ export async function main(denops: Denops): Promise<void> {
       try {
         const content = await get_content(denops, operation_text);
         console.debug(content);
-        await fn.setline(denops, next_line_num, content.split(/\r?\n/g));
+        await fn.append(denops, next_line_num, content.split(/\r?\n/g));
       } catch (error) {
         console.error(error);
       }
@@ -96,7 +96,7 @@ export async function main(denops: Denops): Promise<void> {
       try {
         const content = await get_content(denops, operation_text);
         console.debug(content);
-        await fn.setline(denops, next_line_num, content.split(/\r?\n/g));
+        await fn.append(denops, next_line_num, content.split(/\r?\n/g));
       } catch (error) {
         console.error(error);
       }
