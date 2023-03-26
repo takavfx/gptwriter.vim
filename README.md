@@ -26,7 +26,7 @@ let g:gptwriter_key = '<openapi_key>' # Or you have to manage seprately for safe
 
 ### Ask GPT and let he/she write
 
-GPTWriter writes response from GPT (ChatGPT) at the cursor in an active buffer.
+GPTWriter writes response from GPT (ChatGPT) at the cursor in current buffer.
 Execute `GPTWrite` command with arg like this:
 
 ```
@@ -39,19 +39,19 @@ For example:
 :GPTWrite think about shooting game
 ```
 
-### Ask GPT and let he/she write THE REST FROM selected LINES
+### Ask GPT and let he/she write THE REST FROM SELECTED LINES
 
 ```
 :GPTWriteFromSelected <(*Optional) operation words>
 ```
 
-### Ask GPT and let he/she write THE REST FROM selected LINES
+### Ask GPT and let he/she write THE REST FROM WHOLE LINES
 
 ```
 :GPTWriteFromWhole
 ```
 
-### Ask GPT and let he/she write THE REST
+### Ask GPT and let he/she write THE REST with defineded words.
 
 Let GPT write the rest from activat entire buffer.
 
